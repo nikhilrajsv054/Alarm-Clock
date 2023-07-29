@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alarm Clock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Container to hold the alarm clock -->
+  <div class="container">
+    <div class="center-border">
+      <!-- Clock display -->
+      <div class="clock-container">
+        <div class="image">
+          <!-- Alarm clock image -->
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Alarm_Clock_Animation_High_Res.png/969px-Alarm_Clock_Animation_High_Res.png" alt="alarm-clock" width="120px" height="100px"> 
+        </div>
+        <!-- Current time display -->
+        <h1 class="clock" id="clock">12:00:00</h1>
+
+        <!-- Alarm setting form -->
+        <div class="alarm-form">
+          <input type="number" id="hour" placeholder="Hour (1-12)" min="1" max="12">
+          <input type="number" id="minute" placeholder="Minute (0-59)" min="1" max="59">
+          <input type="number" id="second" placeholder="Second (0-59)" min="1" max="59">
+          <label for="ampm">AM/PM:</label>
+          <select id="ampm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+          <button id="set-alarm">Set Alarm</button>
+        </div>
+
+        <!-- Heading for the list of alarms -->
+        <h2 id="alarms-heading">Alarms</h2>
+        
+        <!-- List to display the alarms -->
+        <ul class="alarms" id="alarms"></ul>
+      </div>
+    </div>
+  </div>
+  <!-- JavaScript code to handle the alarm clock functionality -->
+  <script src="script.js"></script>
+</body>
+</html>
