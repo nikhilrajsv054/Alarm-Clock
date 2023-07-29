@@ -18,9 +18,9 @@ Click the "Set Alarm" button to add the alarm to the list.
 Alarms will be displayed below the form.
 To remove an alarm, click the delete button next to it.
 
-Contributing
+# Contributing
 Contributions are welcome! If you find a bug or have any suggestions, feel free to open an issue or create a pull request.
 
-Author
+# Author
 Nikhilraj S V
 
